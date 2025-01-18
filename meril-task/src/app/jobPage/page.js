@@ -96,7 +96,7 @@ const JobRequisitionPage = () => {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            Authorization: `${apiKey}:${apiSecret}`,
+            Authorization: `Bearer ${apiKey} : ${apiSecret}`,
           },
           body: JSON.stringify(formData),
         }
